@@ -28,7 +28,7 @@ public class CubeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        angles += new Vector3(Random.Range(0, 1f), Random.Range(0, 1f), Random.Range(0, 1f));
+        angles += new Vector3(Random.Range(0, 1f), Random.Range(0, 1f), Random.Range(0, 1f))*Time.deltaTime*100f;
         transform.eulerAngles = angles;
     }
 
